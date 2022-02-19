@@ -2927,7 +2927,7 @@
 
 		UI.el.appendChild ( container );
 
-		dragNDrop( d.getElementById('app'), 'pk_overlay', function ( e ) {
+		dragNDrop( d.getElementById(PKAudioEditor.el.id), 'pk_overlay', function ( e ) {
 			PKAudioEditor.engine.LoadArrayBuffer ( new Blob([e]) );
 		}, 'arrayBuffer' );
 
